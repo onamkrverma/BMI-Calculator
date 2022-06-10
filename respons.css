@@ -1,0 +1,54 @@
+@media (max-width:426px){
+    .navBar{
+        background: linear-gradient(45deg,#00ecff ,#495758 );
+    }
+
+    .navList{
+        flex-direction: column;
+    }
+    .navList h2{
+        margin: 4px 15px;
+    }
+    
+    .ul-item{
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        
+    }
+    .ul-item li{
+        margin: 10px 0;
+        
+    } 
+    .input-field label{
+        margin-right: 6px;
+    }
+    
+
+    .container{
+        /* flex-direction: column; */
+        padding-top: 20px;
+    }
+    .box{
+        width: 96%;
+        margin-top: 15px;
+    }
+    
+    .result-box{
+        width: 80%;
+    }
+
+   
+    .humburger{
+        display: block;
+    }
+
+    .bmiChartImg img {
+        width: 270px;
+
+    }
+
+    .paras{
+        width: 98%;
+    }
+}

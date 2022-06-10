@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="BMI,bmi calculator,bodymassindex bmi-calculator22">
+    <meta name="description" content="This BMI calculator gives you body mass index according to height and weight and tells you your healthy weight">
+    <meta name="author" content="Onamkrverma">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="respons.css">
+    <title>BMI calculator</title>
+</head>
+
+<body>
+
+    <nav class="navBar ">
+        <div class="navList ">
+            <h2><a href="#"> BMI calculator</a></h2>
+
+            <ul class="ul-item ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#bmiDetails">BMI Details</a></li>
+                <li><a href="#unitContainer">Unit conversion</a></li>
+
+            </ul>
+        </div>
+        <div class="humburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="box">
+            <div class="heading">
+                <h2>BMI calculator</h2>
+            </div>
+
+
+            <form name="bmiForm" id="bmi-form" onsubmit="calculate(); return false ">
+                <div class="input-field">
+                    <label for="">Age</label>
+                    <input type="text" name="age" id="age" placeholder=" in Years" autocomplete="off">
+                </div>
+                <div class="input-field">
+                    <label for="">Gender</label>
+                    <input type="radio" name="radio" id="male" placeholder="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="radio" id="female" placeholder="female">
+                    <label for="">Female</label>
+
+
+                </div>
+                <div class="input-field">
+                    <label for="">Height</label>
+                    <input type="text" name="height" id="height" placeholder=" in meter (m)" autocomplete="off">
+                </div>
+                <div class="input-field">
+                    <label for="">Weight</label>
+                    <input type="text" name="weight" id="weight" placeholder=" in kg" autocomplete="off">
+                </div>
+
+
+                <div class="btn">
+                    <input type="submit" value="Calculate" class="calculate">
+                    <input type="reset" value="Clear All" class="clear">
+                </div>
+
+
+            </form>
+
+            <div class="error-message">
+                <p>Please Enter All details correctly</p>
+            </div>
+        </div>
+
+        <div class="result-box">
+            <div class="heading">
+                <h2>Result</h2>
+            </div>
+            <div class="progressBar">
+                <div class="progressOuter">
+                    <div class="progressInner"></div>
+                </div>
+            </div>
+            <div class="result"></div>
+            <div class="note-box">
+                <h5 class="note"></h5>
+                <div class="note1"></div>
+                <div class="note2"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="unitContainer" class="unitContainer">
+
+        <div class="unitConvertor">
+
+            <h2 class="heading">Unit Convertor</h2>
+            <form id="unitForm" onsubmit="unitcalculate(); return false">
+                <label>Enter unit to convert</label>
+
+                <input type="number" class="length" placeholder="enter number only" step="0.001" autocomplete="off">
+
+                <select title="selection" name="selection" id="selection">
+                    <option value="cm-m">centimeter To meter</option>
+                    <option value="m-cm">meter To centimeter</option>
+                    <option value="ft-m">feet To meter</option>
+                    <option value="m-ft">meter To feet</option>
+                </select>
+                <div class="btn">
+                    <input type="submit" value="Submit" class="submit">
+                </div>
+            </form>
+
+
+            <div class="unitResult"></div>
+            <div class="error-message show-message">
+                <p>Please Enter unit</p>
+            </div>
+            
+
+
+        </div>
+    </div>
+
+    <div class="bmiContainer" >
+        <div class="heading">
+            <h2>What is BMI ?</h2>
+        </div>
+        <div class="bmiDetails" id="bmiDetails">
+
+            <div class="paras">
+                <p>Body-Mass Index, or BMI, of a person helps them check whether they are a healthy weight for their
+                    height.
+                    If a person weighs less or more than the recommended weight for their height, it could lead to
+                    health
+                    issues in the future. While BMI is not the only factor individuals should consider while working on
+                    their health and fitness, it is a good starting point. To understand what your BMI is, you need to
+                    know
+                    your height and weight. You can then use an online BMI calculator to check your BMI, which will help
+                    you
+                    understand if you are underweight, a healthy weight, overweight or obese. Or, you can measure your
+                    height in metres and weight in kilograms. Divide your weight by your height squared to calculate
+                    your
+                    BMI.
+                </p>
+            </div>
+
+            <div class="bmiChartImg">
+                <img src="Body mass index.jpg" alt="bmi chart image">
+            </div>
+
+
+        </div>
+        <div class="bmiRange">
+            <h3>BMI Range</h3>
+            <p>Underweight - BMI less than 18.5 <br>
+                Normal weight - BMI between 18.5 and 24 <br>
+                Overweight - BMI between 25 and 29.9 <br>
+                Obese - BMI above 30 <br>
+            </p>
+        </div>
+    </div>
+
+
+
+    <footer>Made with🧡 by onamkrverma</footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
